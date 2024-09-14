@@ -1,13 +1,17 @@
 .parent {
-  width: min-content;
-  height: max-content;
+  min-width: 300px;
+  width: 60%;
+  max-width: 500px;
+  min-height: 400px;
+  height: 50%;
+  max-height: 600px;
   border: 6px solid rgb(139, 121, 121);
   margin-top: 2rem;
   border-radius: 16px;
   gap: 0.25rem;
   display: grid;
-  grid-template-rows: 150px 150px 150px;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
   background-color: black;
 }
